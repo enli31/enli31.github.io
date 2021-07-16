@@ -1157,7 +1157,7 @@ img::-moz-selection {
 
 .page-fullscreen .intro-header {
     position: fixed;
-    left: 0;
+    left: 1;
     top: 0;
     width: 100%;
     height: 100%
@@ -1165,7 +1165,7 @@ img::-moz-selection {
 
 .page-fullscreen #tag-heading {
     position: fixed;
-    left: 0;
+    left: 1;
     top: 0;
     padding-bottom: 150px;
     width: 100%;
