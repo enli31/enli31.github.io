@@ -136,10 +136,9 @@ body {
      */
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
   line-height: 1.7;
-  font-size: 22px;
+  font-size: 26px;
   color: #000000;
   overflow-x: hidden;
-  background:gray
 }
 p {
   margin: 30px 0;
