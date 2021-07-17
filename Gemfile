@@ -2,4 +2,4 @@
 
 gem 'github-pages'
 gem "webrick"
-gem source 'https://rubygems.org'
+source 'https://rubygems.org'
