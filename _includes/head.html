@@ -1,23 +1,41 @@
-{% raw %}<script>
+{% raw %}
+<script>
     var _hmt = _hmt || [];
-    (function() {
-       var hm = document.createElement("script");
-       hm.src = "https://hm.baidu.com/hm.js?{{site.ba_track_id}}";
-       var s = document.getElementsByTagName("script")[0]; 
-       s.parentNode.insertBefore(hm, s);
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?{{site.ba_track_id}}";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
     })();
-    </script>{% endraw %}
+</script>{% endraw %}
 
-<head>    
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="{{ site.description }}">
-    <meta name="keywords"  content="{{ site.keyword }}">
+    <meta name="keywords" content="{{ site.keyword }}">
     <meta name="theme-color" content="{{ site.chrome-tab-theme-color }}">
-    
+
     <title>{% if page.title %}{{ page.title }} - {{ site.SEOTitle }}{% else %}{{ site.SEOTitle }}{% endif %}</title>
+
+        {% if include.type == "post" %}
+        <span class="post-meta">{{ page.date | date: "%Y-%m-%d, %A " }}</span>
+        <!-- script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" -->
+		</script>
+		<!-- script pointing to busuanzi.js -->
+        <span id="busuanzi_container_page_pv">
+            阅读量<span id="busuanzi_value_page_pv"></span>次
+        </span>
+        {% endif %}
+
+        {% if include.type == "post" %}
+        <span class="post-meta">{{ page.date | date: "%Y-%m-%d, %A " }}</span>
+        <span id="busuanzi_container_page_pv">
+            阅读量<span id="busuanzi_value_page_pv"></span>次
+        </span>
+        {% endif %}
 
     <!-- Web App Manifest -->
     <link rel="manifest" href="{{ site.baseurl }}/pwa/manifest.json">
@@ -27,23 +45,24 @@
 
     <!-- Safari Webpage Icon    by-BY -->
     <link rel="apple-touch-icon" href="{{ site.baseurl }}/img/apple-touch-icon.png">
-    
+
     <!-- Canonical URL -->
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
     <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="{{ "/css/bootstrap.min.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ " /css/bootstrap.min.css" | prepend: site.baseurl }}">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="{{ "/css/hux-blog.min.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ " /css/hux-blog.min.css" | prepend: site.baseurl }}">
 
     <!-- Pygments Github CSS -->
-    <link rel="stylesheet" href="{{ "/css/syntax.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ " /css/syntax.css" | prepend: site.baseurl }}">
 
     <!-- Custom Fonts -->
     <!-- <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
     <!-- Hux change font-awesome CDN to qiniu -->
-    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"
+        type="text/css">
 
 
     <!-- Hux Delete, sad but pending in China
@@ -60,5 +79,8 @@
     <![endif]-->
 
     <!-- ga & ba script hoook -->
+
+
     <script></script>
+
 </head>
