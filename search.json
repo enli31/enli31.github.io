@@ -1,0 +1,16 @@
+<!--为了防止被编译运行，这里添加了反斜杠，自己手动取掉反斜杠。
+---
+layout: null
+---
+[
+  {\% for post in site.posts \%\}
+    {
+      "title"    : "\{\{ post.title | escape \}\}",
+      "category" : "\{\{ post.category \}\}",
+      "tags"     : "\{\{ post.tags | join: ', ' \}\}",
+      "url"      : "\{\{ site.baseurl \}\}\{\{ post.url \}\}",
+      "date"     : "\{\{ post.date \}\}"
+    } \{\% unless forloop.last \%\},\{\% endunless \%\}
+  {\% endfor \%\}
+]
+-->
