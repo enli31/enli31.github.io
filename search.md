@@ -4,7 +4,7 @@ title: 搜索
 ---
 
 <!-- HTML elements for search -->
-<input type="text" id="search-input" placeholder="搜索信息-输入标题/相关内容.." style="width:480px;"/>
+<input type="text" id="search-input" placeholder="搜索信息-输入标题/相关内容.." style="width:380px;"/>
 <ul id="results-container"></ul>
 
 <!-- script pointing to jekyll-search.js -->
