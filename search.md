@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Search
+title: 搜索
 ---
 
 <!-- HTML elements for search -->
-<input type="text" id="search-input" placeholder="搜索信息 - 输入标题/相关内容/日期/Tags.." style="width:380px;"/>
+<input type="text" id="search-input" placeholder="输入相关内容进行搜索/.." style="width:480px;"/>
 <ul id="results-container"></ul>
 
 <!-- script pointing to jekyll-search.js -->
