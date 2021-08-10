@@ -18,24 +18,7 @@
     <meta name="keywords" content="{{ site.keyword }}">
     <meta name="theme-color" content="{{ site.chrome-tab-theme-color }}">
 
-    <title>{% if page.title %}{{ page.title }} - {{ site.SEOTitle }}{% else %}{{ site.SEOTitle }}{% endif %}</title>
-
-        {% if include.type == "post" %}
-        <span class="post-meta">{{ page.date | date: "%Y-%m-%d, %A " }}</span>
-        <!-- script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" -->
-		</script>
-		<!-- script pointing to busuanzi.js -->
-        <span id="busuanzi_container_page_pv">
-            阅读量<span id="busuanzi_value_page_pv"></span>次
-        </span>
-        {% endif %}
-
-        {% if include.type == "post" %}
-        <span class="post-meta">{{ page.date | date: "%Y-%m-%d, %A " }}</span>
-        <span id="busuanzi_container_page_pv">
-            阅读量<span id="busuanzi_value_page_pv"></span>次
-        </span>
-        {% endif %}
+    <title>{% if page.title %}{{ page.title }} - {{ site.SEOTitle }}{% else %}{{ site.SEOTitle }}{% endif %}</title>      
 
     <!-- Web App Manifest -->
     <link rel="manifest" href="{{ site.baseurl }}/pwa/manifest.json">
